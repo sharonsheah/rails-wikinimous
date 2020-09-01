@@ -1,0 +1,6 @@
+<div class="container my-3 mx-auto w-50">
+    <h2 class="mb-1 d-flex"><%= @article.title %></h2>
+    <p class="mb-1 border-bottom py-3 mb-3"><%= @article.content %></p>
+    <button type="button" class="btn btn-primary"><%= link_to("Edit", edit_article_path) %></button>
+    <button type="button" class="btn btn-danger"><%= link_to "Delete", article_path(@article),method: :delete, data: { confirm: "Are you sure?" } %></button>
+</div>

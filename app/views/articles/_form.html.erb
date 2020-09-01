@@ -1,0 +1,11 @@
+<div class="container m-3">
+  <%= simple_form_for(article) do |f| %>
+    <%= f.input :title %>
+    <%= f.input :content %>
+    <%= f.submit %>
+  <% end %>
+</div>
+<div class="container m-3">
+  <button type="button" class="btn btn-primary mx-0"><%= link_to("Show", article_path) %></button>
+  <button type="button" class="btn btn-primary mx-0"><%= link_to("Back", articles_path) %></button>
+</div>
